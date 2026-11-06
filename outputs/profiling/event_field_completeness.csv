@@ -1,0 +1,6 @@
+event_type,field,relevant_events,missing_values,completeness_percentage,status
+Shot,shot_xg,28,0,100.0,Complete
+Shot,shot_outcome,28,0,100.0,Complete
+Pass,pass_end_x,1033,0,100.0,Complete
+Pass,pass_end_y,1033,0,100.0,Complete
+Pass,pass_length,1033,0,100.0,Complete

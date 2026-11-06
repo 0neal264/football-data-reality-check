@@ -1,0 +1,7 @@
+event_id,event_type,player,minute,x,y
+1001,Pass,Player A,4,35,24
+1002,Shot,Player B,12,110,39
+1002,Pass,Player C,18,48,22
+1004,Tackle,,27,55,42
+1005,Pass,Player D,145,130,81
+1006,Carry,Player E,33,unknown,40

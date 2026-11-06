@@ -1,0 +1,7 @@
+rule,row_index,column,message,value
+missing_value,3,player,Missing value in 'player'.,
+duplicate_value,2,event_id,Duplicate value in 'event_id'.,1002
+numeric_range,4,minute,"Value in 'minute' is outside the allowed range [0, 130].",145
+coordinate_bounds,4,x,Coordinate 'x' must be between 0 and 120.0.,130
+coordinate_bounds,4,y,Coordinate 'y' must be between 0 and 80.0.,81
+coordinate_type,5,x,Coordinate 'x' is not numeric.,unknown

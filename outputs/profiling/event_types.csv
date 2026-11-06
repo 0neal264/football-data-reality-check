@@ -1,0 +1,27 @@
+event_type,event_count,percentage
+Pass,1033,29.54
+Ball Receipt*,978,27.97
+Carry,796,22.76
+Pressure,226,6.46
+Ball Recovery,95,2.72
+Duel,56,1.6
+Block,36,1.03
+Clearance,33,0.94
+Goal Keeper,32,0.92
+Dribble,29,0.83
+Dispossessed,28,0.8
+Shot,28,0.8
+Foul Committed,25,0.71
+Foul Won,23,0.66
+Dribbled Past,20,0.57
+Miscontrol,16,0.46
+Interception,11,0.31
+Injury Stoppage,9,0.26
+Substitution,5,0.14
+Half Start,4,0.11
+Half End,4,0.11
+Tactical Shift,3,0.09
+Starting XI,2,0.06
+Error,2,0.06
+50/50,2,0.06
+Offside,1,0.03

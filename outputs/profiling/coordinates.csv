@@ -1,0 +1,27 @@
+event_type,total_events,x_available,y_available,both_coordinates_available,coordinate_completeness_pct
+Pass,1033,1033,1033,1033,100.0
+Ball Receipt*,978,978,978,978,100.0
+Carry,796,796,796,796,100.0
+Pressure,226,226,226,226,100.0
+Ball Recovery,95,95,95,95,100.0
+Duel,56,56,56,56,100.0
+Block,36,36,36,36,100.0
+Clearance,33,33,33,33,100.0
+Goal Keeper,32,32,32,32,100.0
+Dribble,29,29,29,29,100.0
+Dispossessed,28,28,28,28,100.0
+Shot,28,28,28,28,100.0
+Foul Committed,25,25,25,25,100.0
+Foul Won,23,23,23,23,100.0
+Dribbled Past,20,20,20,20,100.0
+Miscontrol,16,16,16,16,100.0
+Interception,11,11,11,11,100.0
+Injury Stoppage,9,0,0,0,0.0
+Substitution,5,0,0,0,0.0
+Half Start,4,0,0,0,0.0
+Half End,4,0,0,0,0.0
+Tactical Shift,3,0,0,0,0.0
+50/50,2,2,2,2,100.0
+Error,2,2,2,2,100.0
+Starting XI,2,0,0,0,0.0
+Offside,1,1,1,1,100.0
