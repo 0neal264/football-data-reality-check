@@ -58,37 +58,42 @@ StatsBomb event data records actions such as passes, shots, carries, pressures a
 football-data-reality-check/
 │
 ├── data/
-│   └── raw/
-│       └── statsbomb/
+│   ├── raw/statsbomb/              # StatsBomb match, event and competition JSON
+│   └── sample_events.csv           # small sample file with deliberate errors (early prototype)
 │
 ├── notebooks/
-│   └── football_anomaly_detection.ipynb
+│   └── Isolation_forest_analysis.ipynb
 │
 ├── outputs/
-│   ├── profiling/
+│   ├── profiling/                  # profiling CSVs
 │   ├── statsbomb_validation_report.csv
-│   └── football_team_statistics.csv
+│   ├── football_team_statistics.csv
+│   ├── validation_report.csv       # report from the sample-file prototype
+│   └── *.png                       # shot map, xG race, shot timeline, team comparison, dashboard
+│
+├── sql/
+│   └── exploratory_checks.sql      # illustrative SQL versions of the checks
 │
 ├── src/
 │   └── data_quality/
-│       ├── statsbomb.py
-│       ├── statsbomb_checks.py
-│       ├── rules.py
-│       ├── reporting.py
+│       ├── statsbomb.py            # JSON loading and flattening
+│       ├── statsbomb_checks.py     # StatsBomb validation checks
+│       ├── rules.py                # generic validation rules
+│       ├── football.py             # pitch-coordinate check
+│       ├── reporting.py            # CSV report export
 │       ├── profiling.py
 │       ├── completeness.py
-│       ├── football.py
 │       ├── football_analytics.py
 │       └── visualisations.py
 │
 ├── tests/
 │
-├── app.py
-├── run_analysis.py
+├── app.py                          # Streamlit dashboard
 ├── run_statsbomb_validation.py
 ├── run_data_profiling.py
 ├── run_football_analytics.py
-├── create_visualisations.py
+├── create_visuals.py
+├── run_analysis.py                 # early prototype on data/sample_events.csv
 ├── requirements.txt
 └── README.md
 ```
@@ -121,6 +126,10 @@ The pipeline includes checks for:
 - Missing shot outcomes
 
 The validation report records potential issues identified by these checks.
+
+For the 2018 final, the report (`outputs/statsbomb_validation_report.csv`) contains only its header row: none of these checks found an issue in this match. An empty report means the data passed, not that the checks did not run.
+
+The project began as a prototype on a small sample file (`data/sample_events.csv`, run with `run_analysis.py`) that contains deliberate errors, such as a duplicate ID and a missing player. Its output is `outputs/validation_report.csv`, which shows what the report looks like when issues are found.
 
 ### 3. Data Profiling
 
@@ -319,7 +328,7 @@ python run_data_profiling.py
 
 python run_football_analytics.py
 
-python create_visualisations.py
+python create_visuals.py
 ```
 
 ### 6. Run the Anomaly Detection Notebook
@@ -333,7 +342,7 @@ jupyter notebook
 Open:
 
 ```text
-notebooks/football_anomaly_detection.ipynb
+notebooks/Isolation_forest_analysis.ipynb
 ```
 
 Run the notebook cells in order.
